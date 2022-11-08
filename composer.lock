@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccbd816a07b206f971042295b899d1ba",
+    "content-hash": "d0bf183262e2b08a4ad6da3fcb73f597",
     "packages": [
         {
             "name": "brick/math",
@@ -2833,6 +2833,76 @@
                 }
             ],
             "time": "2022-11-05T23:03:38+00:00"
+        },
+        {
+            "name": "romanzipp/laravel-twitch",
+            "version": "4.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/romanzipp/Laravel-Twitch.git",
+                "reference": "fbb322ca1901589881ab6eba24ee3bd980cd9303"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/romanzipp/Laravel-Twitch/zipball/fbb322ca1901589881ab6eba24ee3bd980cd9303",
+                "reference": "fbb322ca1901589881ab6eba24ee3bd980cd9303",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^7.0",
+                "illuminate/cache": "^5.5|^6.0|^7.0|^8.0|^9.0",
+                "illuminate/console": "^5.5|^6.0|^7.0|^8.0|^9.0",
+                "illuminate/support": "^5.5|^6.0|^7.0|^8.0|^9.0",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "mockery/mockery": "^1.3.2",
+                "orchestra/testbench": "^3.8|^4.0|^5.0|^6.0",
+                "phpstan/phpstan": "^0.12.99|^1.0",
+                "phpunit/phpunit": "^8.0|^9.0",
+                "romanzipp/php-cs-fixer-config": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "romanzipp\\Twitch\\Providers\\TwitchServiceProvider"
+                    ],
+                    "aliases": {
+                        "Twitch": "romanzipp\\Twitch\\Facades\\Twitch"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "romanzipp\\Twitch\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "romanzipp",
+                    "email": "ich@ich.wtf",
+                    "homepage": "https://ich.wtf"
+                }
+            ],
+            "description": "Twitch PHP Wrapper for Laravel",
+            "support": {
+                "issues": "https://github.com/romanzipp/Laravel-Twitch/issues",
+                "source": "https://github.com/romanzipp/Laravel-Twitch/tree/4.5.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/romanzipp",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-09-20T07:13:09+00:00"
         },
         {
             "name": "symfony/console",
@@ -7820,5 +7890,5 @@
         "php": "^8.0.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }
